@@ -1,5 +1,7 @@
 {
-  "lang": { "name": "Français" },
+  "lang": {
+    "name": "Français"
+  },
   "meta": {
     "title": "AI Speeds — Applis web gratuites : langues, poker, jeux et plongée",
     "description": "Une collection d'applications web gratuites créées à la vitesse de l'IA : apprenez le japonais, le chinois et l'anglais par scènes, entraînez vos décisions GTO au poker, jouez à un puzzle des abysses et découvrez la vie marine. Sans inscription, gratuit pour toujours."
@@ -25,7 +27,9 @@
     "ocean": "Plongée et océan",
     "oceanSub": "Pour les plongeurs et les amoureux de l'océan."
   },
-  "card": { "open": "Ouvrir" },
+  "card": {
+    "open": "Ouvrir"
+  },
   "projects": {
     "kototabi": {
       "name": "Kototabi ことたび",
@@ -66,6 +70,11 @@
       "name": "ScubaSites",
       "tag": "Guides de sites de plongée",
       "desc": "Des guides de sites de plongée structurés pour préparer votre prochain voyage."
+    },
+    "mines": {
+      "name": "Démineur Rogue",
+      "tag": "Roguelite · Démineur",
+      "desc": "Le démineur réinventé en exploration de donjon — les chiffres indiquent la force des monstres, les PV sont une ressource. Terrassez le dragon au 3e étage."
     }
   },
   "about": {

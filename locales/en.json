@@ -1,5 +1,7 @@
 {
-  "lang": { "name": "English" },
+  "lang": {
+    "name": "English"
+  },
   "meta": {
     "title": "AI Speeds — Free Web Apps: Language Learning, Poker Training, Games & Diving",
     "description": "A collection of free web apps built at AI speed: learn Japanese, Chinese and English by scene, train poker GTO decisions, play a deep-sea merge puzzle, and explore ocean life. No sign-up, free forever."
@@ -25,7 +27,9 @@
     "ocean": "Diving & Ocean",
     "oceanSub": "For divers and ocean lovers."
   },
-  "card": { "open": "Open" },
+  "card": {
+    "open": "Open"
+  },
   "projects": {
     "kototabi": {
       "name": "Kototabi ことたび",
@@ -66,6 +70,11 @@
       "name": "ScubaSites",
       "tag": "Dive Site Guides",
       "desc": "Structured dive site guides for divers planning their next trip."
+    },
+    "mines": {
+      "name": "Minesweeper Rogue",
+      "tag": "Roguelite · Minesweeper",
+      "desc": "Minesweeper reborn as a dungeon crawl — numbers show monster strength, HP is a resource to spend. Slay the dragon on floor 3."
     }
   },
   "about": {
