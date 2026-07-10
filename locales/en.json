@@ -72,9 +72,9 @@
       "desc": "Structured dive site guides for divers planning their next trip."
     },
     "mines": {
-      "name": "Minesweeper Rogue",
-      "tag": "Roguelite · Minesweeper",
-      "desc": "Minesweeper reborn as a dungeon crawl — numbers show monster strength, HP is a resource to spend. Slay the dragon on floor 3."
+      "name": "Dungeon Sweep",
+      "tag": "Cute · Minesweeper RPG",
+      "desc": "One board, one life: numbers show monster strength, HP is a resource, exactly 0 is safe. Level up and slay the dragon at the center."
     }
   },
   "about": {

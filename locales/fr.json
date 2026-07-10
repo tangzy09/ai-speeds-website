@@ -72,9 +72,9 @@
       "desc": "Des guides de sites de plongée structurés pour préparer votre prochain voyage."
     },
     "mines": {
-      "name": "Démineur Rogue",
-      "tag": "Roguelite · Démineur",
-      "desc": "Le démineur réinventé en exploration de donjon — les chiffres indiquent la force des monstres, les PV sont une ressource. Terrassez le dragon au 3e étage."
+      "name": "Dungeon Sweep",
+      "tag": "Mignon · Démineur RPG",
+      "desc": "Un plateau, une vie : les chiffres indiquent la force des monstres, les PV sont une ressource, tomber à exactement 0 est sans danger. Montez de niveau et terrassez le dragon central."
     }
   },
   "about": {
