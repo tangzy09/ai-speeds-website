@@ -1,0 +1,79 @@
+{
+  "lang": { "name": "Français" },
+  "meta": {
+    "title": "AI Speeds — Applis web gratuites : langues, poker, jeux et plongée",
+    "description": "Une collection d'applications web gratuites créées à la vitesse de l'IA : apprenez le japonais, le chinois et l'anglais par scènes, entraînez vos décisions GTO au poker, jouez à un puzzle des abysses et découvrez la vie marine. Sans inscription, gratuit pour toujours."
+  },
+  "nav": {
+    "projects": "Projets",
+    "about": "À propos"
+  },
+  "hero": {
+    "eyebrow": "ai-speeds.com",
+    "title": "Des applis web gratuites, créées à la vitesse de l'IA.",
+    "subtitle": "Apprentissage des langues, entraînement au poker, jeux et guides de plongée — à ouvrir dans votre navigateur, sans inscription, gratuit pour toujours.",
+    "cta": "Parcourir les projets",
+    "count": "{n} projets en ligne"
+  },
+  "sections": {
+    "language": "Apprentissage des langues",
+    "languageSub": "Du vocabulaire par scènes de la vie réelle, avec audio, quiz et révision espacée.",
+    "poker": "Entraînement au poker",
+    "pokerSub": "Des décisions GTO fondées sur des calculs vérifiés — aucun chiffre inventé.",
+    "games": "Jeux",
+    "gamesSub": "De petits jeux avec une vraie profondeur.",
+    "ocean": "Plongée et océan",
+    "oceanSub": "Pour les plongeurs et les amoureux de l'océan."
+  },
+  "card": { "open": "Ouvrir" },
+  "projects": {
+    "kototabi": {
+      "name": "Kototabi ことたび",
+      "tag": "Japonais · JLPT N5–N2",
+      "desc": "Apprenez plus de 2 000 mots de japonais dans 36 scènes du quotidien — cartes mémoire, quiz d'écoute et révision espacée."
+    },
+    "mando": {
+      "name": "Mando",
+      "tag": "Mandarin · HSK",
+      "desc": "Construisez votre vocabulaire HSK de mandarin scène par scène — cartes mémoire, écoute et textes à trous."
+    },
+    "wordwing": {
+      "name": "Wordwing",
+      "tag": "Anglais · CECRL",
+      "desc": "Enrichissez votre vocabulaire anglais par scènes, classé par niveaux CECRL — cartes mémoire, écoute et textes à trous."
+    },
+    "preflop": {
+      "name": "Preflop Camp",
+      "tag": "Texas Hold'em · GTO préflop",
+      "desc": "Entraîneur GTO préflop gratuit : ouvertures, défense des blindes, 3-bet/4-bet et ranges push/fold résolues."
+    },
+    "postflop": {
+      "name": "Postflop Coach",
+      "tag": "Texas Hold'em · Postflop",
+      "desc": "Entraînez vos décisions postflop en heads-up : 30 leçons et 699 exercices vérifiés — cotes du pot, MDF, c-bet."
+    },
+    "abyss": {
+      "name": "2048 Abyss",
+      "tag": "Roguelite · Puzzle de fusion",
+      "desc": "Un puzzle de fusion roguelite des abysses — fusionnez des créatures marines lumineuses, débloquez compétences et talents."
+    },
+    "fishid": {
+      "name": "FishID",
+      "tag": "Encyclopédie · 270 espèces",
+      "desc": "Une encyclopédie de la vie marine — collectionnez et identifiez 270 espèces."
+    },
+    "scubasites": {
+      "name": "ScubaSites",
+      "tag": "Guides de sites de plongée",
+      "desc": "Des guides de sites de plongée structurés pour préparer votre prochain voyage."
+    }
+  },
+  "about": {
+    "title": "À propos d'AI Speeds",
+    "body": "Chaque application ici est conçue, développée et mise en ligne avec l'IA comme copilote — d'où le nom. Ce sont toutes des applis web statiques et gratuites : pas de compte, pas de paywall, pas de pistage superflu. Choisissez-en une et utilisez-la, tout simplement."
+  },
+  "footer": {
+    "tagline": "Construit à la vitesse de l'IA.",
+    "rights": "© {year} ai-speeds.com · Tous les projets sont gratuits"
+  }
+}

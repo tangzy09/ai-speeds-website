@@ -1,0 +1,79 @@
+{
+  "lang": { "name": "中文" },
+  "meta": {
+    "title": "AI Speeds — 免费网页应用合集：语言学习 · 扑克训练 · 游戏 · 潜水",
+    "description": "以 AI 的速度做出来的免费网页应用合集：按场景学日语、中文、英语，练德州扑克 GTO 决策，玩深海合成解谜，认识海洋生物。无需注册，永久免费。"
+  },
+  "nav": {
+    "projects": "项目",
+    "about": "关于"
+  },
+  "hero": {
+    "eyebrow": "ai-speeds.com",
+    "title": "以 AI 的速度，做免费好用的网页应用。",
+    "subtitle": "语言学习、扑克训练、小游戏与潜水指南——浏览器打开即用，无需注册，永久免费。",
+    "cta": "浏览项目",
+    "count": "{n} 个已上线项目"
+  },
+  "sections": {
+    "language": "语言学习",
+    "languageSub": "按真实生活场景背单词，带发音、测验与间隔复习。",
+    "poker": "扑克训练",
+    "pokerSub": "基于验证过的数学做 GTO 决策——绝不编造数据。",
+    "games": "游戏",
+    "gamesSub": "小而有深度的游戏。",
+    "ocean": "潜水与海洋",
+    "oceanSub": "献给潜水员和海洋爱好者。"
+  },
+  "card": { "open": "打开" },
+  "projects": {
+    "kototabi": {
+      "name": "Kototabi ことたび",
+      "tag": "日语 · JLPT N5–N2",
+      "desc": "按 36 个生活场景背 2000+ 日语单词——翻卡、听力测验与间隔复习。"
+    },
+    "mando": {
+      "name": "Mando",
+      "tag": "中文 · HSK",
+      "desc": "按场景积累 HSK 中文词汇，配翻卡、听力与挖空测验（面向外国学习者）。"
+    },
+    "wordwing": {
+      "name": "Wordwing",
+      "tag": "英语 · CEFR",
+      "desc": "按场景学英语单词，CEFR 分级——翻卡、听力与挖空测验。"
+    },
+    "preflop": {
+      "name": "翻前训练营 Preflop Camp",
+      "tag": "德州扑克 · 翻前 GTO",
+      "desc": "免费翻前 GTO 训练器：率先加注、盲注防守、3-bet/4-bet，含自研求解的 push/fold 范围。"
+    },
+    "postflop": {
+      "name": "翻后训练营 Postflop Coach",
+      "tag": "德州扑克 · 翻牌后",
+      "desc": "练单挑翻牌后决策：30 课 699 道验证过的实战题，覆盖底池赔率、MDF 与 c-bet。"
+    },
+    "abyss": {
+      "name": "2048 Abyss",
+      "tag": "Roguelite · 合成解谜",
+      "desc": "深海 Roguelite 合成解谜——合并发光的海洋生物，解锁技能与天赋，一路下潜深渊。"
+    },
+    "fishid": {
+      "name": "鱼鱼图鉴 FishID",
+      "tag": "图鉴 · 270 种生物",
+      "desc": "海洋生物图鉴——收集并认识 270 种海洋生物。"
+    },
+    "scubasites": {
+      "name": "ScubaSites",
+      "tag": "潜点指南",
+      "desc": "结构化的潜点指南，帮潜水员规划下一次潜旅。"
+    }
+  },
+  "about": {
+    "title": "关于 AI Speeds",
+    "body": "这里的每个应用都由 AI 协作设计、开发并上线——站名由此而来。它们都是免费的静态网页应用：不用注册、没有付费墙、没有多余的跟踪。挑一个，直接用。"
+  },
+  "footer": {
+    "tagline": "以 AI 的速度构建。",
+    "rights": "© {year} ai-speeds.com · 所有项目免费使用"
+  }
+}

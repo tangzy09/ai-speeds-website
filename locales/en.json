@@ -1,0 +1,79 @@
+{
+  "lang": { "name": "English" },
+  "meta": {
+    "title": "AI Speeds — Free Web Apps: Language Learning, Poker Training, Games & Diving",
+    "description": "A collection of free web apps built at AI speed: learn Japanese, Chinese and English by scene, train poker GTO decisions, play a deep-sea merge puzzle, and explore ocean life. No sign-up, free forever."
+  },
+  "nav": {
+    "projects": "Projects",
+    "about": "About"
+  },
+  "hero": {
+    "eyebrow": "ai-speeds.com",
+    "title": "Free web apps, built at AI speed.",
+    "subtitle": "Language learning, poker training, games and ocean guides — open in your browser, no sign-up, free forever.",
+    "cta": "Browse projects",
+    "count": "{n} live projects"
+  },
+  "sections": {
+    "language": "Language Learning",
+    "languageSub": "Vocabulary by real-life scene, with audio, quizzes and spaced review.",
+    "poker": "Poker Training",
+    "pokerSub": "GTO decisions from verified math — no made-up numbers.",
+    "games": "Games",
+    "gamesSub": "Small games with real depth.",
+    "ocean": "Diving & Ocean",
+    "oceanSub": "For divers and ocean lovers."
+  },
+  "card": { "open": "Open" },
+  "projects": {
+    "kototabi": {
+      "name": "Kototabi ことたび",
+      "tag": "Japanese · JLPT N5–N2",
+      "desc": "Learn 2,000+ Japanese words across 36 real-life scenes — flashcards, listening quizzes and spaced review."
+    },
+    "mando": {
+      "name": "Mando",
+      "tag": "Mandarin · HSK",
+      "desc": "Build HSK Mandarin vocabulary scene by scene with flashcards, listening and fill-in-the-blank quizzes."
+    },
+    "wordwing": {
+      "name": "Wordwing",
+      "tag": "English · CEFR",
+      "desc": "Learn English vocabulary by scene, graded by CEFR level — flashcards, listening and fill-in-the-blank quizzes."
+    },
+    "preflop": {
+      "name": "Preflop Camp",
+      "tag": "Texas Hold'em · Preflop GTO",
+      "desc": "Free preflop GTO trainer: opening, blind defense, 3-bet/4-bet, plus solved push/fold ranges."
+    },
+    "postflop": {
+      "name": "Postflop Coach",
+      "tag": "Texas Hold'em · Postflop",
+      "desc": "Train heads-up postflop decisions: 30 lessons and 699 verified drills covering pot odds, MDF and c-betting."
+    },
+    "abyss": {
+      "name": "2048 Abyss",
+      "tag": "Roguelite · Merge Puzzle",
+      "desc": "A deep-sea roguelite merge puzzle — merge glowing sea creatures, unlock skills and talents, dive the abyss."
+    },
+    "fishid": {
+      "name": "FishID 鱼鱼图鉴",
+      "tag": "Encyclopedia · 270 species",
+      "desc": "An ocean life encyclopedia — collect and identify 270 marine species."
+    },
+    "scubasites": {
+      "name": "ScubaSites",
+      "tag": "Dive Site Guides",
+      "desc": "Structured dive site guides for divers planning their next trip."
+    }
+  },
+  "about": {
+    "title": "About AI Speeds",
+    "body": "Every app here is designed, built and shipped with AI as the co-pilot — hence the name. They are all free static web apps: no account, no paywall, no tracking beyond the basics. Pick one and just use it."
+  },
+  "footer": {
+    "tagline": "Built at AI speed.",
+    "rights": "© {year} ai-speeds.com · All projects free to use"
+  }
+}
