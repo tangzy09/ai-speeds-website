@@ -8,7 +8,10 @@
 <link rel="canonical" href="https://ai-speeds.com/">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Speeds">
 <meta property="og:title" content="AI Speeds — Free Web Apps, Built at AI Speed">
 <meta property="og:description" content="Language learning, poker training, games and ocean guides — open in your browser, no sign-up, free forever.">
 <meta property="og:url" content="https://ai-speeds.com/">
@@ -57,6 +60,7 @@
     --card-shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.12);
     --nav-bg: rgba(251, 251, 253, 0.8);
     --menu-bg: rgba(255, 255, 255, 0.95);
+    --shot-bg: #e8e8ed;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -70,6 +74,7 @@
       --card-shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.6);
       --nav-bg: rgba(22, 22, 23, 0.8);
       --menu-bg: rgba(40, 40, 42, 0.95);
+      --shot-bg: #2c2c2e;
     }
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -166,9 +171,9 @@
 
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 18px; }
   .card {
-    display: flex; flex-direction: column; gap: 14px;
+    display: flex; flex-direction: column;
     background: var(--bg-elevated); border: 1px solid var(--hairline); border-radius: 22px;
-    padding: 26px 24px 22px; box-shadow: var(--card-shadow);
+    overflow: hidden; box-shadow: var(--card-shadow);
     transition: transform 0.25s cubic-bezier(0.2, 0.6, 0.3, 1), box-shadow 0.25s;
   }
   .card:hover { transform: translateY(-4px); box-shadow: var(--card-shadow-hover); }
@@ -176,12 +181,20 @@
     html { scroll-behavior: auto; }
     .card, .card:hover, .btn-primary, .btn-primary:hover { transform: none; transition: none; }
   }
-  .card .tile {
-    width: 54px; height: 54px; border-radius: 14px; flex: none;
-    display: flex; align-items: center; justify-content: center; font-size: 27px;
+  .card .shot {
+    width: 100%; height: auto; aspect-ratio: 16 / 10; flex: 0 0 auto;
+    object-fit: cover; object-position: top;
+    display: block; background: var(--shot-bg);
+    border-bottom: 1px solid var(--hairline);
   }
-  .card h3 { font-size: 19px; font-weight: 600; letter-spacing: -0.01em; }
-  .card .tag { font-size: 12px; font-weight: 600; color: var(--tint); margin-top: 2px; }
+  .card-body { display: flex; flex-direction: column; gap: 13px; padding: 18px 20px 18px; flex: 1; }
+  .title-row { display: flex; align-items: center; gap: 12px; }
+  .card .tile {
+    width: 42px; height: 42px; border-radius: 11px; flex: none;
+    display: flex; align-items: center; justify-content: center; font-size: 21px;
+  }
+  .card h3 { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; }
+  .card .tag { font-size: 12px; font-weight: 600; color: var(--tint); margin-top: 1px; }
   .card .desc { font-size: 14px; color: var(--text-secondary); flex: 1; }
   .card .open {
     font-size: 14px; font-weight: 500; color: var(--tint);
@@ -248,31 +261,46 @@
     </div>
     <div class="grid">
       <a class="card" href="https://kototabi.ai-speeds.com/" target="_blank" rel="noopener">
-        <div class="tile t-kototabi">⛩️</div>
-        <div>
-          <h3 data-i18n="projects.kototabi.name">Kototabi ことたび</h3>
-          <div class="tag" data-i18n="projects.kototabi.tag">Japanese · JLPT N5–N2</div>
+        <img class="shot" src="images/kototabi.jpg" alt="Kototabi screenshot" loading="lazy" width="1280" height="800">
+        <div class="card-body">
+          <div class="title-row">
+            <div class="tile t-kototabi">⛩️</div>
+            <div>
+              <h3 data-i18n="projects.kototabi.name">Kototabi ことたび</h3>
+              <div class="tag" data-i18n="projects.kototabi.tag">Japanese · JLPT N5–N2</div>
+            </div>
+          </div>
+          <p class="desc" data-i18n="projects.kototabi.desc">Learn 2,000+ Japanese words across 36 real-life scenes — flashcards, listening quizzes and spaced review.</p>
+          <span class="open" data-i18n="card.open">Open</span>
         </div>
-        <p class="desc" data-i18n="projects.kototabi.desc">Learn 2,000+ Japanese words across 36 real-life scenes — flashcards, listening quizzes and spaced review.</p>
-        <span class="open" data-i18n="card.open">Open</span>
       </a>
       <a class="card" href="https://mando.ai-speeds.com/" target="_blank" rel="noopener">
-        <div class="tile t-mando">🐼</div>
-        <div>
-          <h3 data-i18n="projects.mando.name">Mando</h3>
-          <div class="tag" data-i18n="projects.mando.tag">Mandarin · HSK</div>
+        <img class="shot" src="images/mando.jpg" alt="Mando screenshot" loading="lazy" width="1280" height="800">
+        <div class="card-body">
+          <div class="title-row">
+            <div class="tile t-mando">🐼</div>
+            <div>
+              <h3 data-i18n="projects.mando.name">Mando</h3>
+              <div class="tag" data-i18n="projects.mando.tag">Mandarin · HSK</div>
+            </div>
+          </div>
+          <p class="desc" data-i18n="projects.mando.desc">Build HSK Mandarin vocabulary scene by scene with flashcards, listening and fill-in-the-blank quizzes.</p>
+          <span class="open" data-i18n="card.open">Open</span>
         </div>
-        <p class="desc" data-i18n="projects.mando.desc">Build HSK Mandarin vocabulary scene by scene with flashcards, listening and fill-in-the-blank quizzes.</p>
-        <span class="open" data-i18n="card.open">Open</span>
       </a>
       <a class="card" href="https://wordwing.ai-speeds.com/" target="_blank" rel="noopener">
-        <div class="tile t-wordwing">🕊️</div>
-        <div>
-          <h3 data-i18n="projects.wordwing.name">Wordwing</h3>
-          <div class="tag" data-i18n="projects.wordwing.tag">English · CEFR</div>
+        <img class="shot" src="images/wordwing.jpg" alt="Wordwing screenshot" loading="lazy" width="1280" height="800">
+        <div class="card-body">
+          <div class="title-row">
+            <div class="tile t-wordwing">🕊️</div>
+            <div>
+              <h3 data-i18n="projects.wordwing.name">Wordwing</h3>
+              <div class="tag" data-i18n="projects.wordwing.tag">English · CEFR</div>
+            </div>
+          </div>
+          <p class="desc" data-i18n="projects.wordwing.desc">Learn English vocabulary by scene, graded by CEFR level — flashcards, listening and fill-in-the-blank quizzes.</p>
+          <span class="open" data-i18n="card.open">Open</span>
         </div>
-        <p class="desc" data-i18n="projects.wordwing.desc">Learn English vocabulary by scene, graded by CEFR level — flashcards, listening and fill-in-the-blank quizzes.</p>
-        <span class="open" data-i18n="card.open">Open</span>
       </a>
     </div>
   </section>
@@ -284,22 +312,32 @@
     </div>
     <div class="grid">
       <a class="card" href="https://pre-flop.ai-speeds.com/" target="_blank" rel="noopener">
-        <div class="tile t-preflop">♠️</div>
-        <div>
-          <h3 data-i18n="projects.preflop.name">Preflop Camp</h3>
-          <div class="tag" data-i18n="projects.preflop.tag">Texas Hold'em · Preflop GTO</div>
+        <img class="shot" src="images/preflop.jpg" alt="Preflop Camp screenshot" loading="lazy" width="1280" height="800">
+        <div class="card-body">
+          <div class="title-row">
+            <div class="tile t-preflop">♠️</div>
+            <div>
+              <h3 data-i18n="projects.preflop.name">Preflop Camp</h3>
+              <div class="tag" data-i18n="projects.preflop.tag">Texas Hold'em · Preflop GTO</div>
+            </div>
+          </div>
+          <p class="desc" data-i18n="projects.preflop.desc">Free preflop GTO trainer: opening, blind defense, 3-bet/4-bet, plus solved push/fold ranges.</p>
+          <span class="open" data-i18n="card.open">Open</span>
         </div>
-        <p class="desc" data-i18n="projects.preflop.desc">Free preflop GTO trainer: opening, blind defense, 3-bet/4-bet, plus solved push/fold ranges.</p>
-        <span class="open" data-i18n="card.open">Open</span>
       </a>
       <a class="card" href="https://post-flop-coach.ai-speeds.com/" target="_blank" rel="noopener">
-        <div class="tile t-postflop">🃏</div>
-        <div>
-          <h3 data-i18n="projects.postflop.name">Postflop Coach</h3>
-          <div class="tag" data-i18n="projects.postflop.tag">Texas Hold'em · Postflop</div>
+        <img class="shot" src="images/postflop.jpg" alt="Postflop Coach screenshot" loading="lazy" width="1280" height="800">
+        <div class="card-body">
+          <div class="title-row">
+            <div class="tile t-postflop">🃏</div>
+            <div>
+              <h3 data-i18n="projects.postflop.name">Postflop Coach</h3>
+              <div class="tag" data-i18n="projects.postflop.tag">Texas Hold'em · Postflop</div>
+            </div>
+          </div>
+          <p class="desc" data-i18n="projects.postflop.desc">Train heads-up postflop decisions: 30 lessons and 699 verified drills covering pot odds, MDF and c-betting.</p>
+          <span class="open" data-i18n="card.open">Open</span>
         </div>
-        <p class="desc" data-i18n="projects.postflop.desc">Train heads-up postflop decisions: 30 lessons and 699 verified drills covering pot odds, MDF and c-betting.</p>
-        <span class="open" data-i18n="card.open">Open</span>
       </a>
     </div>
   </section>
@@ -311,13 +349,18 @@
     </div>
     <div class="grid">
       <a class="card" href="https://4096.ai-speeds.com/" target="_blank" rel="noopener">
-        <div class="tile t-abyss">🐙</div>
-        <div>
-          <h3 data-i18n="projects.abyss.name">2048 Abyss</h3>
-          <div class="tag" data-i18n="projects.abyss.tag">Roguelite · Merge Puzzle</div>
+        <img class="shot" src="images/abyss.jpg" alt="2048 Abyss screenshot" loading="lazy" width="1280" height="800">
+        <div class="card-body">
+          <div class="title-row">
+            <div class="tile t-abyss">🐙</div>
+            <div>
+              <h3 data-i18n="projects.abyss.name">2048 Abyss</h3>
+              <div class="tag" data-i18n="projects.abyss.tag">Roguelite · Merge Puzzle</div>
+            </div>
+          </div>
+          <p class="desc" data-i18n="projects.abyss.desc">A deep-sea roguelite merge puzzle — merge glowing sea creatures, unlock skills and talents, dive the abyss.</p>
+          <span class="open" data-i18n="card.open">Open</span>
         </div>
-        <p class="desc" data-i18n="projects.abyss.desc">A deep-sea roguelite merge puzzle — merge glowing sea creatures, unlock skills and talents, dive the abyss.</p>
-        <span class="open" data-i18n="card.open">Open</span>
       </a>
     </div>
   </section>
@@ -329,22 +372,32 @@
     </div>
     <div class="grid">
       <a class="card" href="https://fishid.ai-speeds.com/" target="_blank" rel="noopener">
-        <div class="tile t-fishid">🐠</div>
-        <div>
-          <h3 data-i18n="projects.fishid.name">FishID 鱼鱼图鉴</h3>
-          <div class="tag" data-i18n="projects.fishid.tag">Encyclopedia · 270 species</div>
+        <img class="shot" src="images/fishid.jpg" alt="FishID screenshot" loading="lazy" width="1280" height="800">
+        <div class="card-body">
+          <div class="title-row">
+            <div class="tile t-fishid">🐠</div>
+            <div>
+              <h3 data-i18n="projects.fishid.name">FishID 鱼鱼图鉴</h3>
+              <div class="tag" data-i18n="projects.fishid.tag">Encyclopedia · 270 species</div>
+            </div>
+          </div>
+          <p class="desc" data-i18n="projects.fishid.desc">An ocean life encyclopedia — collect and identify 270 marine species.</p>
+          <span class="open" data-i18n="card.open">Open</span>
         </div>
-        <p class="desc" data-i18n="projects.fishid.desc">An ocean life encyclopedia — collect and identify 270 marine species.</p>
-        <span class="open" data-i18n="card.open">Open</span>
       </a>
       <a class="card" href="https://scubasites.ai-speeds.com/" target="_blank" rel="noopener">
-        <div class="tile t-scubasites">🤿</div>
-        <div>
-          <h3 data-i18n="projects.scubasites.name">ScubaSites</h3>
-          <div class="tag" data-i18n="projects.scubasites.tag">Dive Site Guides</div>
+        <img class="shot" src="images/scubasites.jpg" alt="ScubaSites screenshot" loading="lazy" width="1280" height="800">
+        <div class="card-body">
+          <div class="title-row">
+            <div class="tile t-scubasites">🤿</div>
+            <div>
+              <h3 data-i18n="projects.scubasites.name">ScubaSites</h3>
+              <div class="tag" data-i18n="projects.scubasites.tag">Dive Site Guides</div>
+            </div>
+          </div>
+          <p class="desc" data-i18n="projects.scubasites.desc">Structured dive site guides for divers planning their next trip.</p>
+          <span class="open" data-i18n="card.open">Open</span>
         </div>
-        <p class="desc" data-i18n="projects.scubasites.desc">Structured dive site guides for divers planning their next trip.</p>
-        <span class="open" data-i18n="card.open">Open</span>
       </a>
     </div>
   </section>
